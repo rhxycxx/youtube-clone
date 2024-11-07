@@ -1,0 +1,9 @@
+.sidebar{
+  position: fixed;
+  top: 55px;
+  left: 0px;
+  bottom: 0px;
+  width: 72px;
+
+  background-color: white;
+}
