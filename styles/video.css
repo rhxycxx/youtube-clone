@@ -1,0 +1,116 @@
+.video-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+} 
+
+    .thumbnail-row{
+      margin-bottom: 8px;
+      position: relative; /*relative to the element*/
+    }
+
+        .thumbnail{
+          width: 100%;
+        }
+
+        .video-time{
+          font-family: roboto;
+          font-size: 12px;
+          font-weight: 500;
+          background-color: black;
+          color: white;
+          position: absolute;
+          bottom: 8px;
+          right: 5px; 
+          padding: 4px 4px 4px 4px;
+          border-radius: 2px;
+        }
+
+.video-info-grid{
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.video-info-grid a{
+  text-decoration: none;
+}
+
+    .profile-picture{
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+    }
+
+      .profile-picture-container{
+        display: inline-block;
+        position: relative;
+      }
+
+      .profile-picture-container:hover .channel-tooltip{
+        opacity: 1;
+      }
+
+      .channel-tooltip{
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        padding: 12px 10px 12px 10px;
+        min-width: 200px;
+        border-radius: 10px;
+        box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.125s;
+        /* bottom: -80px; */
+        z-index: 1000;
+      }
+
+      .channel-tooltip-picture{
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 25px;
+        margin-right: 10px;
+      }
+      
+      .channel-tooltip-info{
+        font-family: roboto;
+        flex: 1;
+      }
+
+      .channel-tooltip-name{
+        font-weight: 600;
+      }
+
+      .channel-tooltip-subscriber{
+        font-size: 14px;
+        color: rgb(96, 96, 96); 
+      }
+
+      .video-title{
+        margin-top: 0px;
+        font-size: 14px ;
+        font-weight: 500;
+        line-height: 20px;
+        margin-bottom: 10px;
+        
+      }
+
+      .video-title-link{
+        color: black;
+      }
+
+          .video-author{
+            font-size: 12px;
+            color: rgb(96, 96, 96); 
+            margin-bottom: 4px;
+            text-decoration: none;
+          }
+
+          .video-stats{
+            color: rgb(96, 96, 96);
+            font-size: 12px;
+          }
